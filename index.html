@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clicker Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Clicker Game</h1>
+    <h2>Money: $<span id="money">0.0</span></h2>
+
+    <div class="stats">
+      <p>Total Clicks: <span id="totalClicks">0</span></p>
+      <p>Lifetime Earnings: $<span id="lifetimeEarnings">0.0</span></p>
+      <p>Earnings/sec (Auto): $<span id="earningsPerSec">0</span></p>
+    </div>
+
+    <button id="clickBtn" class="big-btn">Click Me!</button>
+
+    <div class="button-group">
+      <button id="upgradeBtn" disabled>Upgrade Click ($50)</button>
+      <button id="autoClickerBtn">Buy Auto Clicker ($150)</button>
+      <button id="autoUpgradeBtn" disabled>Upgrade Auto Clicker ($200)</button>
+      <button id="superAutoClickerBtn">Super Auto Clicker ($500)</button>
+    </div>
+
+    <div class="animation-container">
+      <span id="dollarSign" class="dollar-sign">$</span>
+    </div>
+  </div>
+
+  <footer>
+    <p>A game by Uddhav Game Development Company</p>
+  </footer>
+
+  <audio id="clickSound" src="sounds/click.mp3" preload="auto"></audio>
+  <audio id="upgradeSound" src="sounds/upgrade.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
